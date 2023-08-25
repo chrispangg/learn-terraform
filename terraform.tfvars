@@ -1,3 +1,3 @@
-project      	= "learn-terraform-396505"
+project      	= "learn-terraform-397023"
 credentials_file = "credentials.json"
-bucket_name  	= "learn-terraform-396505-bucket"
+bucket_name  	= "learn-terraform-397023-bucket"

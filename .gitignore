@@ -1,11 +1,30 @@
-*.json
-*.tfplan
+# Compiled files
 *.tfstate
-*.backup
+*.tfstate.backup
+*.tfstate.lock.info*.terraform.lock.hcl
+# logs
+*.log
+
+# Directories
 .terraform/
-crash.log
-override.tf
-override.tf.json
-.terraform.lock.hcl
+
+# SSH Keys
 *.pem
 *.pub
+
+# Backup files
+*.bak
+
+# Ignored Terraform files
+*gitignore*.tf
+.terraform.lock.hcl
+*.tfplan
+
+*.pem
+# Ignore Mac .DS_Store files
+.DS_Store
+
+# Ignored vscode files
+.vscode/
+
+*.json
