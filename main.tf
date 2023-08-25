@@ -62,7 +62,7 @@ resource "google_compute_firewall" "allow-ssh" {
     protocol = "tcp"
     ports    = ["22"]
   }
-  target_tags = ["ssh"]
+  target_tags   = ["ssh"]
   source_ranges = ["0.0.0.0/0"]
 }
 
@@ -73,7 +73,7 @@ resource "google_compute_firewall" "streamlit" {
     protocol = "tcp"
     ports    = ["8501"]
   }
-  target_tags = ["streamlit"]
+  target_tags   = ["streamlit"]
   source_ranges = ["0.0.0.0/0"]
 }
 
