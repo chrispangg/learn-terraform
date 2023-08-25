@@ -63,6 +63,7 @@ resource "google_compute_firewall" "allow-ssh" {
     ports    = ["22"]
   }
   target_tags = ["ssh"]
+  # source_ranges = ["0.0.0.0/0"]
 }
 
 resource "google_compute_firewall" "streamlit" {
@@ -73,6 +74,7 @@ resource "google_compute_firewall" "streamlit" {
     ports    = ["8501"]
   }
   target_tags = ["streamlit"]
+  source_ranges = ["0.0.0.0/0"]
 }
 
 resource "google_storage_bucket" "bucket" {
