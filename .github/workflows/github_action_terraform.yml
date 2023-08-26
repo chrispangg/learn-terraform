@@ -43,10 +43,6 @@ jobs:
               id: terraform_plan
               run: terraform plan
 
-            - name: Terraform Destroy
-              id: tf_destroy
-              run: terraform destroy --auto-approve
-
             - name: Terraform Apply
               id: tf_apply
               run: terraform apply --auto-approve
