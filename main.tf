@@ -5,6 +5,10 @@ terraform {
       version = "4.9.0"
     }
   }
+  backend "gcs" {
+    bucket = "learn-terraform-397023-bucket"
+    prefix = "terraform/state"
+  }
 }
 
 # connect to my google account
